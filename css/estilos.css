@@ -1,0 +1,544 @@
+  
+        *{
+            box-sizing: border-box;
+        }
+        body, h1,h2,h3{
+            margin: 0;
+			padding: 0;
+        }
+
+        body{
+			color:#252525;
+			font-family: sans-serif; 
+        }
+
+        section{
+            padding: 30px;
+        }
+
+        section figure{
+            text-align: center;
+        }
+
+        
+        p{
+            line-height: 1.4em;
+        }
+
+        h1{
+            font-size: 4em;
+        }
+
+        h2{
+            margin-top:30px;
+            text-align: center;
+            font-size: 3.5em;
+            color:#2a507c;
+        }
+
+
+        h2 + p{
+            font-size: 1.5em;
+            font-weight: bold;
+
+        }
+
+        h3{
+            font-size: 2.5em;
+        }
+
+
+        h3 + p{
+            font-size: 1.3em;
+        }
+
+        .boton.mas-info{
+       
+            display: inline-block;
+            padding: 10px;
+            background: #ffffff;
+            color: #234771;
+            border:1px solid #234771;
+            text-decoration: none;
+            transition: all 0.2s;
+   
+        }
+
+        .boton.mas-info:hover{
+            display: inline-block;
+            padding: 10px;
+            background: #234771;
+            color: #FFF;
+            
+ 
+        }
+ 
+    
+
+        header{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+            min-height: 200px;
+            background: linear-gradient(rgba(64, 10, 150,0.6),rgba(64, 10, 150,0.1)),
+                         url('../imagenes/fondo-inventos.jpg') right bottom/cover;
+            color:#FFF;
+                 
+        }
+
+        header h1, header p{
+            margin:5px;
+            padding: 0;
+        }
+        .cabecera-invento-teleferico{
+            background: linear-gradient(rgb(47, 71, 122), transparent),
+             	 url('../imagenes/teleferico-merida.jpg') center center/cover,
+	        	rgb(47, 71, 122);
+        }
+
+
+		nav{
+			padding: 1px;
+			background: #000;
+
+		}
+
+		nav ul{
+			display: flex;
+			justify-content: center;
+			list-style-type: none;
+		}
+
+		nav li{
+			margin:0 10px;
+		}
+		
+		nav li a{
+			text-decoration: none;
+			color:#FFF;
+			font-weight: bold;
+		}
+
+        nav li a:hover{
+		 
+			color:#4f8dd3;
+			 
+		}
+
+
+        
+  
+
+        /* -------------CAJA PADRE ----------------*/
+        .cajaPadre{
+            max-width: 1500px;
+			display: flex;
+			flex-wrap: wrap;
+            margin:40px auto;
+            
+        }
+ 
+        
+        .cajaPadre .caja-invento{
+        
+           
+            flex-basis: 33.33%;
+            padding: 30px;
+            border:1px solid #2a507c;
+            text-align: center;
+
+            background: #FFF ;
+
+        }
+        
+        .cajaPadre .caja-invento:nth-child(even){
+            background: #2a507c;
+            color:#FFF;
+        }
+        .cajaPadre .caja-invento.caja-pantalon{
+            background: linear-gradient(#000000c6, #0000003d),
+                         url("../imagenes/bruce-springsteen-pantalon-vaquero.png") center/cover !important ;
+            min-height: 200px;
+        }
+		.cajaPadre .caja-invento:nth-child(odd) img{
+           max-width: 100%;
+        }
+
+        .caja-invento-explicado{
+            max-width: 1500px;
+            margin:0 auto;
+        }
+        .caja-invento7{
+            flex-basis: 33.33%;
+            padding: 30px;
+            border:1px solid #2a507c;
+            text-align: center;
+            color:#FFF;
+            
+            background: linear-gradient(rgb(47, 71, 122), transparent),
+            url('../imagenes/teleferico-merida.jpg') center center/cover,
+          rgb(47, 71, 122); 
+        }
+
+
+		  /* -------------FOOTER PRINCIPAL ----------------*/
+		footer{
+			padding: 30px;
+			color:#FFF;
+			background:#000 ;
+			text-align: center;
+
+		}
+
+        #fondo-procesador{
+            background-image: url("../imagenes/foto-fancy-cpu.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* invento movil */
+        .invento-movil{
+            background:radial-gradient(circle, rgba(211, 213, 221, 0.8) 16%, rgba(4,4,4,0.2) 70%),url(../imagenes/el-movil-que-cambia-de-color.jpeg) center center/cover !important;
+            color: rgb(48, 6, 48);
+        }
+  
+
+        /* css en página invento-television e index (Hector) */
+        .imagen-fondo-invento-television{
+            background: url("../imagenes/imagen-movil-fondo.webp") -260px/cover !important;
+        }
+
+        .imagen-fondo-header{
+            background: url("../imagenes/fondo-header.jpg") center/cover;
+        }
+
+        .imagen-fondo-header h1, .imagen-fondo-header p{
+            background: #00000040;
+            border-radius: 25px;
+            padding: 10px;
+        }
+        
+        /* imagenes pantalones vaqueros */
+
+         /* cabecera pantalones */
+        .cabecera-pantalones{
+            background: url(../imagenes/Levis-cabecera-pantalon-vaquero.jpg)right center/cover;
+        }
+       
+        .img-vaqueros{
+            height: 400px;
+        }
+
+         /* -----------------CSS de invento lavadora---------------- */
+         .invento-lavadora{
+            background: linear-gradient(#000,transparent), url('../imagenes/candy-lavadoras.jpg') center center/cover;
+            min-height: 400px;
+        }
+
+
+        .cajaPadre .caja-invento.lavadora{
+            background: url(../imagenes/fondo-lavadora.jpg) center/cover !important;
+        }
+
+        /* invento movil */
+        .invento-movil{
+            background:radial-gradient(circle, rgba(211, 213, 221, 0.8) 16%, rgba(4,4,4,0.2) 70%),url(../imagenes/el-movil-que-cambia-de-color.jpeg) center center/cover !important;
+            color: rgb(48, 6, 48);
+        }
+        #header-movil{
+            background: url(../imagenes/header-movil.jpg) center top/100%;
+            color: rgb(74, 9, 77);
+            text-shadow: 1px 2px 2px rgb(155, 155, 165);
+        }
+        #header-movil p{
+            font-size: 1.5em;
+            text-shadow: 1px 1px 1px rgb(209, 209, 231);
+        }
+        #header-movil p,#header-movil h1{
+            background: radial-gradient(circle, rgba(211, 213, 221, 0.4) 16%, rgba(134, 126, 126, 0.2) 70%);
+            border-radius: 15px;
+        }
+
+    
+        *{
+            box-sizing: border-box;
+        }
+        body, h1,h2,h3{
+            margin: 0;
+			padding: 0;
+        }
+
+        body{
+			color:#252525;
+			font-family: sans-serif; 
+        }
+
+        section{
+            padding: 30px;
+        }
+
+        section figure{
+            text-align: center;
+        }
+
+        
+        p{
+            line-height: 1.4em;
+        }
+
+        h1{
+            font-size: 4em;
+        }
+
+        h2{
+            margin-top:30px;
+            text-align: center;
+            font-size: 3.5em;
+            color:#2a507c;
+        }
+
+
+        h2 + p{
+            font-size: 1.5em;
+            font-weight: bold;
+
+        }
+
+        h3{
+            font-size: 2.5em;
+        }
+
+
+        h3 + p{
+            font-size: 1.3em;
+        }
+
+        .boton.mas-info{
+       
+            display: inline-block;
+            padding: 10px;
+            background: #ffffff;
+            color: #234771;
+            border:1px solid #234771;
+            text-decoration: none;
+            transition: all 0.2s;
+   
+        }
+
+        .boton.mas-info:hover{
+            display: inline-block;
+            padding: 10px;
+            background: #234771;
+            color: #FFF;
+            
+ 
+        }
+ 
+    
+
+        header{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+            min-height: 200px;
+            background: linear-gradient(rgba(64, 10, 150,0.6),rgba(64, 10, 150,0.1)),
+                         url('../imagenes/fondo-inventos.jpg') right bottom/cover;
+            color:#ece9e9;
+                 
+        }
+
+        
+
+       
+
+        header h1, header p{
+            margin:5px;
+            padding: 0;
+        }
+
+		nav{
+			padding: 1px;
+			background: #000;
+
+		}
+
+		nav ul{
+			display: flex;
+			justify-content: center;
+			list-style-type: none;
+		}
+
+		nav li{
+			margin:0 10px;
+		}
+		
+		nav li a{
+			text-decoration: none;
+			color:#FFF;
+			font-weight: bold;
+		}
+
+        nav li a:hover{
+		 
+			color:#4f8dd3;
+			 
+		}
+
+
+        
+  
+
+        /* -------------CAJA PADRE ----------------*/
+        .cajaPadre{
+            max-width: 1500px;
+			display: flex;
+			flex-wrap: wrap;
+            margin:40px auto;
+            
+        }
+ 
+        .cajaPadre .caja-invento{
+        
+           
+            flex-basis: 33.33%;
+            padding: 30px;
+            border:1px solid #2a507c;
+            text-align: center;
+
+            background: #FFF ;
+
+        }
+
+      
+
+        .cajaPadre .caja-invento:nth-child(even){
+            background: #2a507c;
+            color:#FFF;
+        }
+
+		.cajaPadre .caja-invento:nth-child(odd) img{
+           max-width: 100%;
+        }
+
+        .caja-invento-explicado{
+            max-width: 1500px;
+            margin:0 auto;
+        }
+
+		  /* -------------FOOTER PRINCIPAL ----------------*/
+		footer{
+			padding: 30px;
+			color:#FFF;
+			background:#000 ;
+			text-align: center;
+
+		}
+
+        /* ---css  de portatil ---*/
+
+        .cajaPadre .caja-invento.portatil{
+            background:linear-gradient(#ffffffad,transparent), url(../imagenes/portatil-verde.jpg) center/cover;
+            color: #070707;
+            min-height: 200px;
+           }
+
+           .invento-portatil{
+           
+            background:url(../imagenes/foto-index.jpg) center center/cover;
+            min-height: 500px;
+            
+        }   
+
+        /* Estilo horno microondas */
+
+        .caja-invento-microondas{
+            flex-basis: 33.33%;
+            padding: 30px;
+            border:1px solid #2a507c;
+            text-align: center;
+            color: #FFF;
+            background: linear-gradient(to bottom, rgb(0 0 0 / .5),rgb(0 0 0 / .8)),
+            url("../imagenes/microondas.jpg") center center / cover;
+        }
+
+        .cabecera-invento-microondas{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+            background: linear-gradient(rgba(64, 10, 150,0.6),rgba(64, 10, 150,0.1)),
+                        url('../imagenes/onda-microonda.jfif') top 75% center/cover;
+            color:#FFF;
+        }
+
+        /* estilos nintendo */
+        .caja-invento.invento9{
+            background: /* linear-gradient(rgb(0, 0, 0, 0.3),rgb( 0, 0, 0, 0.5)), */ url('../imagenes/switch-alternativa-2.avif') left center/320% no-repeat, #e70014;
+        }
+
+        .caja-invento.invento9 h3{
+            color: #00bbdd;
+        }
+
+        .caja-invento.invento9 p{
+            margin: 30px 0;
+            color:#fff;
+            background: rgb(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 15px;            
+            
+        }
+
+        header.header-modelo-inventos{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+            min-height: 400px;
+            background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.7)),
+                         url('../imagenes/amigos-jugando.avif') center center/cover;
+            color:#FFF;    
+        }
+
+        /* cine */
+
+        header.fondo-header{
+            background:  url('../imagenes/pelicula-cine.jpg') center center/cover;
+        }
+
+        div.caja-invento#invento-cine{
+
+            background-color: #000;
+            background-image: url(../imagenes/sala.jpg);
+                
+        }
+
+         /* Zona futbolin  */
+
+        .caja-futbolin{
+            background: linear-gradient(rgba(64, 10, 150,0.75),rgba(64, 10, 150,0.2)),
+                        url('../imagenes/cab-futbolin.jpeg') center/cover !important;
+        }
+        .caja-futbolin p{
+            margin-bottom: 40px;
+        }
+
+        .img-futbolin{
+            height: 400px;
+        }  
+
+        .cabeceraFutbolin{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+            min-height: 200px;
+            background: linear-gradient(rgba(64, 10, 150,0.6),rgba(64, 10, 150,0.1)),
+                         url('../imagenes/cab-futbolin.jpeg') center/cover;
+            color:#FFF;
+                 
+        }
+  
